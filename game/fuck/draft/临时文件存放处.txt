@@ -1,0 +1,63 @@
+df = pd.DataFrame()
+
+# 检查文件路径正确性
+if not os.path.exists(excel_file_path):
+    print("错误,无法找到excel文件\n")
+    print('请检查文件路径是否正确')
+    print("error, don't found the excel file.")
+    print("Please check whether the file path is correct.")
+    exit()
+
+    ------------------------------------------------------
+
+# 错误处理方案
+# 统一列表中的列名
+# 对文档时间列做处理
+# 对数据异常和缺失值处理
+
+--------------------------------------------------------
+
+
+time   时间
+name   名称
+type   类别
+rarity  星级
+total   总次数
+within pity  保底内
+remark 备注
+
+----------------------------------------------------
+
+# try:
+#     df_character = pd.read_excel(excel_file_path, sheet_name = '武器活动祈愿')
+#     print('weapon wish logging datas')
+#     print(df_character.head())
+# except ValueError:
+#     print("警告: 无法找到'武器活动祈愿'相关数据")
+#     print('请检查Excel文档是否损坏或被篡改')
+
+# try:
+#     df_character = pd.read_excel(excel_file_path, sheet_name = '常驻祈愿')
+#     print('常驻池子数据')
+#     print(df_character.head())
+# except ValueError:
+#     print("警告: 无法找到'常驻活动祈愿'相关数据")
+#     print('请检查Excel文档是否损坏或被篡改')
+
+# try:
+#     df_character = pd.read_excel(excel_file_path, sheet_name = '集录祈愿')
+#     print('混池数据')
+#     print(df_character.head())
+# except ValueError:
+#     print("警告: 无法找到'集录祈愿'相关数据")
+#     print('请检查Excel文档是否损坏或被篡改')
+
+# try:
+#     df_character = pd.read_excel(excel_file_path, sheet_name = '新手祈愿')
+#     print('新手池数据')
+#     print(df_character.head())
+# except ValueError:
+#     print("警告: 无法找到'新手祈愿'相关数据")
+#     print('请检查Excel文档是否损坏或被篡改')
+
+-----------------------------------------------------
